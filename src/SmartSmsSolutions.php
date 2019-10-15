@@ -10,11 +10,13 @@ class SmartSmsSolutions
     const base_Url = "https://smartsmssolutions.com/api/json.php";
 
     private $token;
+    private $sender;
 
 
-    public function __construct(string $token)
+    public function __construct(string $token, string $sender)
     {
         $this->token = $token;
+        $this->sender = $sender;
     }
 
     /**
@@ -34,7 +36,7 @@ class SmartSmsSolutions
         }
 
         $response =  $this->httpRequest(self::base_Url, [
-            'sender' => config('app.name'),
+            'sender' => $this->sender,
             'to' => $to,
             'message' => ($message),
             'type' => '0',
