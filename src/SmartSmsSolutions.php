@@ -2,6 +2,8 @@
 
 namespace Emmannl\Sms\SmartSms;
 
+use GuzzleHttp\Client;
+
 
 class SmartSmsSolutions
 {
