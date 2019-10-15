@@ -1,0 +1,22 @@
+{
+    "name": "emmannl/smart-sms",
+    "description": "Send SMS via the SmartSMSSolutions gateway",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Emman Nelson",
+            "email": "hello@emman.onl"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Emmannl\\Sms\\SmartSms\\": "src/"
+        }
+    }
+}
